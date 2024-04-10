@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
+    hue-rotate(346deg) brightness(100%) contrast(86%);
+  transition: fill 0.3s ease; /* Анимация перехода цвета */
+}
+
+.icon-active {
+  filter: brightness(100) saturate(100%) invert(0%) sepia(7%) saturate(98%)
+    hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+.rotate-0 {
+  transform: rotateY(0deg);
+}
+
+.rotate-180 {
+  transform: rotateY(180deg);
+}
+
+.block-rotate {
+  transition: transform 1s ease-in-out;
+  transform: rotateX(0deg);
+}
